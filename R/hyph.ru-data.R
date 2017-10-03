@@ -52,4 +52,10 @@
 #' [1] \url{http://tug.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/}
 #'
 #' [2] \url{http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt}
+#' @examples
+#' \dontrun{
+#' library(sylly.ru)
+#' sampleText <- c("\u044d\u0442\u043e","\u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e","\u0433\u043b\u0443\u043f\u044b\u0439","\u043f\u0440\u0438\u043c\u0435\u0440")
+#' hyphen(sampleText, hyph.pattern="ru")
+#' }
 NULL

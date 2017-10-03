@@ -28,6 +28,15 @@ Hyphenation patterns for Russian to be used by \code{\link[sylly:hyphen]{hyphen}
 These data objects are not really intended to be used directly, but rather to be consulted
 by the \code{hyphen()} function without further user interaction.
 }
+\examples{
+\dontrun{
+library(sylly.ru)
+sampleText <- c("\\u044d\\u0442\\u043e",
+     "\\u0434\\u043e\\u0432\\u043e\\u043b\\u044c\\u043d\\u043e","\\u0433\\u043b\\u0443\\u043f\\u044b\\u0439",
+     "\\u043f\\u0440\\u0438\\u043c\\u0435\\u0440")
+hyphen(sampleText, hyph.pattern="ru")
+}
+}
 \references{
 Liang, F.M. (1983). \emph{Word Hy-phen-a-tion by Com-put-er}.
   Dissertation, Stanford University, Dept. of Computer Science.
